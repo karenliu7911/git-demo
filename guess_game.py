@@ -7,13 +7,17 @@ Created on Mon Jan 26 20:08:05 2026
 
 import random
 
+start,end=1,100
+count=3
+
 # 產生亂數
-x=random.randint(1, 50)    
+x=random.randint(start, end)    
 # 提示答案
 #print(x)
 
-for i in range(5):
-    y=int(input(f"請猜一個數字(1~50):"))
+for i in range(count):
+    y=int(input(f"第{i+1}/{count}次，請猜一個數字({start}~{end}):"))
+
     
     # 猜對 + break
     if x==y:
